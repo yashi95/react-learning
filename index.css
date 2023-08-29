@@ -1,3 +1,23 @@
-#heading{
-    color:red;
+.header {
+  padding: 60px;
+  /* text-align: center; */
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
+  overflow: hidden;
+}
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+  float: left;
+}
+.header-right {
+  float: right;
+}
+nav {
+  float: right;
+}
+.logo {
+  height: 50px;
+  width: 50px;
 }
