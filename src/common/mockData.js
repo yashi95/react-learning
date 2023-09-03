@@ -1,27 +1,3 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-
-const Header = () => {
-  return (
-    <div className="header">
-      <div id="logo">
-        <img
-          className="logo"
-          src="https://www.vhv.rs/dpng/d/429-4294391_restaurant-menu-icon-png-icons-for-food-app.png"
-        />
-      </div>
-      <div className="nav-item">
-        <ul>
-          <li>Home</li>
-          <li>About Us</li>
-          <li>Contact Us</li>
-          <li>Cart</li>
-        </ul>
-      </div>
-    </div>
-  );
-};
-
 const apiData = [
   {
     card: {
@@ -9739,61 +9715,7 @@ const apiData = [
     },
   },
 ];
-const RestoCard = (props) => {
-  const { cloudinaryImageId, name, avgRatingString, cuisines, costForTwo } =
-    props.restList.info;
-  // console.log(props);s
-  return (
-    <div>
-      <div id="card">
-        <img
-          id="card-img"
-          alt="cake"
-          src={
-            "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" +
-            cloudinaryImageId
-          }
-        />
-        <h4>{name}</h4>
-        <h5>{avgRatingString}</h5>
-        <h6>{cuisines.join(", ")}</h6>
-        <h6>{costForTwo}</h6>
-      </div>
-    </div>
-  );
-};
-const Body = () => {
-  const restroDataa =
-    apiData[5].card.card.gridElements.infoWithStyle.restaurants;
-  return (
-    <>
-      <div id="restro-search">
-        <input
-          type="search"
-          name="searchItem"
-          id="searchItem"
-          placeholder="   Search for restaurants and food"
-          maxlength="200"
-        />
-      </div>
-      <div id="restro-container">
-        {restroDataa.map((restaurant) => (
-          <RestoCard key={restaurant.info.id} restList={restaurant} />
-        ))}
-      </div>
-    </>
-  );
-};
-const AppLayout = () => {
-  return (
-    <div>
-      <Header />
-      <Body />
-    </div>
-  );
-};
 
-const root = ReactDOM.createRoot(document.getElementById("mainContainer"));
-root.render(<AppLayout />);
-
-// root.render(heading);
+const listOfRestaurants =
+  apiData[5].card.card.gridElements.infoWithStyle.restaurants;
+export default listOfRestaurants;

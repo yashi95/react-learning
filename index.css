@@ -28,12 +28,12 @@
   height: 250px;
   width: 200px;
   /* border: 1px solid black; */
-  /* padding: 5px; */
+  padding: 5px;
   /* background-color: rgb(188, 192, 196); */
-  margin-left: 105px;
-  margin-right: 80px;
-  /* font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", */
-  /* "Lucida Sans Unicode", Geneva, Verdana, sans-serif; */
+  margin-left: 50px;
+  margin-right: 50px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 #card-img {
@@ -45,21 +45,34 @@
 #restro-container {
   width: auto;
   display: flex;
+  justify-content: center;
+  flex-direction: row;
   flex-wrap: wrap;
 }
 #restro-search {
   /* width: 900px; */
   /* box-shadow: 10px 10px 5px 12px gray; */
   display: flex;
-  justify-content: center;
+  justify-content: right;
   align-items: center;
   margin-top: 25px;
+  /* background-color: aqua; */
 }
 #searchItem {
-  width: 60%;
+  width: 20%;
   height: 40px;
-  margin-top: 15px;
   border: 1px solid gray;
   border-radius: 5px;
   font-weight: bold;
+  margin: 10px;
+}
+#filter-btn {
+  padding: 10px;
+  margin: 20px;
+}
+button {
+  background-color: #a20046;
+  border-radius: 5px;
+  height: 40px;
+  color: white;
 }
