@@ -1,5 +1,6 @@
 * {
   margin: 0px;
+  text-decoration: none;
 }
 .header {
   display: flex;
@@ -75,4 +76,13 @@ button {
   border-radius: 5px;
   height: 40px;
   color: white;
+}
+#rate-select {
+  width: 20%;
+  height: 40px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  font-weight: bold;
+  margin: 10px;
+  color: #757575;
 }
